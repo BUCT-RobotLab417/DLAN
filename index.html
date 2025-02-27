@@ -46,28 +46,29 @@
 </head>
 <body>
 
-
+  
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+            <h1 class="title is-1 publication-title">Robust and Real-Time Perception and Planning for UGVs in Complex Outdoor Environments for Inspection Tasks</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Dongjie Huo<sup>1</sup>,</span>
+                <span class="author-block">Dengshuo Wang<sup>1</sup>,</span>
+                <a href="https://faculty.buct.edu.cn/cist/zd1_en/main.htm" target="_blank"><span class="author-block">Dong Zhang </a><sup>1*</sup>,</span>
+                <a href="https://web.njit.edu/~zhou/" target="_blank"><span class="author-block">Mengchu Zhou</a><sup>2</sup>,</span>
+                <a href="https://homepage.hit.edu.cn/CAOZHENGCAI?lang=en" target="_blank"><span class="author-block">Zhengcai Cao</a><sup>3*</sup>,</span>
+              </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block is-size-6">
+                  <sup>1</sup> College of Information Science and Technology, Beijing University of Chemical Technology <br>
+                  <sup>2</sup> Department of Electrical and Computer Engineering, New Jersey Institute of Technology <br>
+                  <sup>3</sup> State Key Laboratory of Robotics and Systems, Harbin Institute of Technology <br>
+                  <span class="eql-cntrb"><small><sup>*</sup>Indicates Corresponding Author</small></span>
+                </span>
+              </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -82,17 +83,6 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
@@ -100,7 +90,7 @@
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Code(Comming Soon)</span>
                   </a>
                 </span>
 
@@ -123,23 +113,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -148,7 +121,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Large-scale outdoor navigation is crucial for unmanned ground vehicles (UGVs) executing inspection tasks. 
+            Although fruitful achievements have been made in their navigation, they face two key challenges in applications.  
+            The first one is how to ensure safe navigation in environments with dynamic and low-lying obstacles that LiDAR cannot detect.
+            The second one is how to conduct the adaptive re-planning of inspection points while some of them are blocked by temporary obstacles.
+            To address these challenges, this work proposes a Dynamic and Low-lying-obstacle Avoidance Navigation (DLAN) system to conduct perception, planning, and point correction for UGVs. 
+            To efficiently and accurately detect dynamic obstacles, it designs a lightweight Ensemble3D framework  that integrates three fast but low-accuracy detection methods. 
+            A multi-criteria waypoint optimizer is used to assist UGVs in path planning. It ensures a balance between obstacle avoidance and path following. 
+            To adjust blocked inspection points through local re-planning, this work designs a checkpoint correction method.
+            Extensive simulations and real-world experiments demonstrate that DLAN enables reliable navigation with high efficiency and robust obstacle avoidance in complex environments. The resultant system’s modular design and computational efficiency make it applicable to delivery, security, and inspection tasks.
           </p>
         </div>
       </div>
@@ -157,61 +138,17 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
 <!-- Youtube video -->
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+      <h2 class="title is-3">Experimental Video</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
           <div class="publication-video">
             <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/tTVzaJrHlpM?si=n22QhmBDsNbnrt9_"  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -220,65 +157,78 @@
 </section>
 <!-- End youtube video -->
 
-
-<!-- Video carousel -->
+<!-- Image Section -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
+      <!-- Baseline Overview -->
+      <h2 class="title is-3 has-text-centered">System Overview</h2>
+      <p class="has-text-centered">
+        <img src="static/images/sys_frame.png" referrerpolicy="no-referrer" alt="navigation_framework">
+      </p>
+      <p>The <strong> DLAN system framework integrates perception, planning, and real-time waypoint correction modules </strong> to ensure safe and efficient navigation in complex environments. The perception module uses Ensemble3D to fuse RGB and depth camera data for dynamic obstacle detection, with trajectory prediction via the SORT algorithm. Grounded-SAM2 segments passable areas and projects them into 3D space. The planning module optimizes waypoints based on obstacle avoidance and path adherence, which are then executed by the Navigation2 system. Real-time perception data refines waypoints to prevent navigation failures, ensuring adaptive and reliable navigation.</p>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
 
 
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <!-- Baseline Overview -->
+      <h2 class="title is-3 has-text-centered">Waypoint Optimizer</h2>
+      <p class="has-text-centered">
+        <img src="static/images/wp.png" referrerpolicy="no-referrer" alt="navigation_framework">
+      </p>
+      <p>A schematic of the waypoint optimization algorithm. Information on low obstacles and dynamic obstacles is collected. The optimal waypoints are selected based on a predefined path. If a predefined point is located inside a static obstacle, it is adjusted accordingly.</p>
+    </div>
+  </div>
+</section>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+
+
+<!-- please add one Image -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <figure class="image">
+          <img src="static/images/robot.png" alt="Image">
+        </figure>
+        <p>Our UGV and its hardware. (a) The front view, and (b) The side view. The UGV used in this work is designed based on a SCOUT 2.0 four-wheel differential chassis equipped with a Mid-360 LiDAR and a RealSense D455 depth camera. Its control unit is a PC with an AMD R9-7945HX processor and an RTX 4060 GPU. </p>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Baseline Overview -->
+      <h2 class="title is-3 has-text-centered">Real World Experiments</h2>
+      <p class="has-text-centered">
+        <img src="static/images/real_exp_a.png" referrerpolicy="no-referrer" alt="navigation_framework">
+      </p>
+      <p>Navigation of UGV in a real inspection task.  It can sequentially reach four pre-definded inspection points while avoiding dynamic and low-lying obstacles and correcting these inspection points.</p>
+    </div>
+  </div>
+</section>
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{xxxxx,
+        title={Robust and Real-Time Perception and Planning for UGVs in Complex Outdoor Environments for Inspection Tasks},
+        author={Dongjie Huo, Dengshuo Wang, Dong Zhang, Mengchu Zhou, Zhengcai Cao},
+        journal={xxx},
+        volume={xx},
+        number={xx},
+        pages={xxx},
+        year={2025},
+        publisher={IEEE}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
